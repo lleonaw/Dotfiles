@@ -1,4 +1,4 @@
-export PATH=$PATH:/Users/li/bin
+export PATH=$PATH:~/bin
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
