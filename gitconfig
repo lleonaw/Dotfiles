@@ -1,0 +1,16 @@
+[user]
+	name = Li
+	email = lleonaw@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[push]
+	default = simple
