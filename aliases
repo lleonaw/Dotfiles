@@ -1,0 +1,7 @@
+# Aliases 
+alias ll="ls -Glrta"
+alias sl="ls" 
+alias ls="ls -G" 
+alias l="ls -G" 
+alias lsd="ls -l | grep "^d" "
+alias nv="vi"
