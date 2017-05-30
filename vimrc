@@ -12,7 +12,7 @@ set tabstop=4
 set sw=2
 
 " Enable use of mouse
-set mouse=a
+" set mouse=a
 " Confirmation
 set confirm
 
@@ -35,9 +35,9 @@ set smartcase
 set guioptions-=r
 set guioptions-=L
 " Honestly no idea what this does- launch other plugins 
-execute pathogen#infect()
+" execute pathogen#infect()
 " Toggle Nerdtree with Ctrl + _ 
-nnoremap <C-_> :NERDTreeToggle<CR>
+" nnoremap <C-_> :NERDTreeToggle<CR>
 " Mapping for move around windows 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -50,14 +50,14 @@ set splitright
 " set clipboard=unnamed
 
 " Change airline theme
-let g:airline_theme='solarized'
+" let g:airline_theme='solarized'
 " Make airline show up even with just one window
-set laststatus=2
+" set laststatus=2
 
 " Compile tex and open pdf, two carriages to return to edit
-autocmd FileType plaintex,tex map <F8> :!pdflatex % && open %:r.pdf<CR>
-autocmd FileType      fortran map <F8> :!makenek %:r<CR>
-autocmd FileType       python map <F8> :!python3.5 %<CR>
+" autocmd FileType plaintex,tex map <F8> :!pdflatex % && open %:r.pdf<CR>
+" autocmd FileType      fortran map <F8> :!makenek %:r<CR>
+" autocmd FileType       python map <F8> :!python3.5 %<CR>
 " autocmd Filetype c,cpp  inoremap <buffer> <F5> <C-o>:update<Bar>execute '!make '.shellescape(expand('%:r'), 1)<CR>
 
 " map <F8> :!pdflatex % && open %:r.pdf<CR><CR>
@@ -66,20 +66,20 @@ autocmd FileType       python map <F8> :!python3.5 %<CR>
 " Set path to include nek source
 " set path+=~/nek5_svn/trunk/nek/
 " Set path to include new Nek5000
-set path+=~/Nek5000/core/
+" set path+=~/Nek5000/core/
 
 " Multiple files from one deep down directory
-let mapleader='\'
-cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
-map <leader>ew :e %% 
-map <leader>es :sp %% 
-map <leader>ev :vsp %% 
-map <leader>et :tabe %% 
+" let mapleader='\'
+" cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+" map <leader>ew :e %% 
+" map <leader>es :sp %% 
+" map <leader>ev :vsp %% 
+" map <leader>et :tabe %% 
 
 " CtrlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
 
 "
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
