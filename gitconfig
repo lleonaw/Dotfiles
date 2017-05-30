@@ -2,7 +2,7 @@
 	name = Li
 	email = lleonaw@gmail.com
 [credential]
-	helper = osxkeychain
+	helper = cache --timeout=14400
 [alias]
 	co = checkout
 	ci = commit
