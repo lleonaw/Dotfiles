@@ -81,5 +81,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-"
+" file type specific treatments
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+" yaml files
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
